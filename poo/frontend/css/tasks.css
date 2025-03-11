@@ -1,0 +1,19 @@
+#task-board {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.task-column {
+    background: #f1f1f1;
+    padding: 15px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.task-list {
+    min-height: 100px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}

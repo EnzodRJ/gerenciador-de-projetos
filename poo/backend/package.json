@@ -1,0 +1,21 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "API para gerenciamento de projetos",
+    "type": "module",
+    "main": "server.ts",
+    "scripts": {
+        "start": "node server.ts",
+        "dev": "nodemon server.ts"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "mysql2": "^3.13.0",
+        "sequelize": "^6.37.6"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}

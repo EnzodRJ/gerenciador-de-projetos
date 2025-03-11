@@ -1,0 +1,17 @@
+{
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Frontend do Gerenciador de Projetos",
+    "main": "js/app.js",
+    "scripts": {
+        "start": "parcel /public/index.html",
+        "build": "parcel build /public/index.html"
+    },
+    "dependencies": {
+        "chart.js": "^4.4.0",
+        "es6-promise": "^4.2.8"
+    },
+    "devDependencies": {
+        "parcel": "^2.9.3"
+    }
+}

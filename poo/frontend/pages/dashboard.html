@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar-container"></div>
+
+    <!-- Conteúdo principal -->
+    <main class="dashboard-container">
+        <h1>Visão Geral</h1>
+
+        <div class="cards-container">
+            <div class="card">
+                <h3>Projetos Ativos</h3>
+                <p id="projects-count">0</p>
+            </div>
+            <div class="card">
+                <h3>Tarefas Pendentes</h3>
+                <p id="tasks-pending">0</p>
+            </div>
+            <div class="card">
+                <h3>Tarefas Concluídas</h3>
+                <p id="tasks-completed">0</p>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h3>Progresso dos Projetos</h3>
+            <canvas id="projectChart"></canvas>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script>
+        // Carregar componentes reutilizáveis (Sidebar e Header)
+        fetch("../components/sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+</body>
+</html>
